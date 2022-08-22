@@ -183,22 +183,3 @@ nav {
 .black-dot {
   background-color: black;
 }
-@media only screen and (max-width: 1300px) {
-  .intro-section {
-    flex-direction: column;
-  }
-  .nav-item {
-    display: none;
-  }
-  [alt="actions"]{
-    display: none;
-  }
-  .left-section {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .right-section {
-    width: 90%;
-    margin: 0% auto;
-  }
-}
