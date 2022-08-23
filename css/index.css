@@ -13,13 +13,13 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* background-color: burlywood; */
+ 
 }
 [alt="logo"] {
   width: 9%;
 }
 .nav-items {
-  /* background-color: aqua; */
+  
   width: 60%;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ nav {
   width: 22%;
   margin: 0%;
 }
-/* intro-section */
+
 .intro-section {
   width: 100%;
   display: flex;
@@ -86,8 +86,7 @@ nav {
 }
 .sub-headline::before {
   content: "+";
-  /* width: 30px;
-  height: 10px; */
+ 
   background-color: #fe5e35;
   padding: 2px 10px;
   color: aliceblue;
@@ -111,64 +110,59 @@ nav {
   cursor: pointer;
 }
 
-.right-section {
-  width: 45%;
-  height: 80vh;
-  margin: 0% 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* background-color: aqua; */
+.right-section{
   position: relative;
+  height: 70vh;
+  width: 50%;
 }
-.headphone-div {
-  width: 100%;
+.headphone-div{
   position: relative;
-  top: 0%;
+ height: 100%;
+  
 }
-[alt="headphone"] {
-  width: 70%;
+[alt="headphone"]{
   position: absolute;
-  top: 1%;
-  left: 26%;
-  z-index: -100;
+  top: 5%;
+  left: 10%;
+  z-index: -200;
+  
 }
-.discount {
-  position: relative;
-  top: 100%;
-  left: 18%;
+.discount{
+
+  position: absolute;
+  top: 70%;
+  left: 5%;
 }
-.discount-content {
-  position: relative;
-  top: 50%;
-  left: 24%;
+.discount-content{
+  position: absolute;
+  top: 80%;
+  left: 10%;
 }
-.discount-content h4 {
-  font-family: "Fredoka One", cursive;
-  font-size: 2.8vmin;
-  color: aliceblue;
-  letter-spacing: 1px;
+.discount-content>h4{
+  font-size: 3vmin;
+  padding: 0%;
   margin: 0%;
-}
-.discount-content h1 {
-  font-family: "Fredoka One", cursive;
-  font-size: 7vmin;
-  margin: 0%;
+  font-weight: 800;
   color: aliceblue;
 }
-.right-section .action-btn {
-  position: relative;
-  top: 37%;
-  left: 50%;
+.discount-content>h1{
+  font-size: 6vmin;
+  margin: 0%;
+  padding: 0%;
+  color: aliceblue;
 }
 .dots {
+ 
   display: flex;
   position: relative;
-  top: 33%;
-  left: 52%;
+  top: 20%;
+  left: 40%;
 }
-
+.right-section>button{
+  position: relative;
+  left: 40%;
+  top: 23%;
+}
 .dot {
   width: 20px;
   height: 19px;
@@ -182,4 +176,18 @@ nav {
 }
 .black-dot {
   background-color: black;
+}
+
+@media only screen and (max-width:1300px){
+  .nav-items{
+    display: none;
+  }.intro-section{
+    flex-direction: column;
+  }
+  .left-section{
+    width: 95%;
+  }
+  .right-section{
+    width: 80%;
+  }
 }
